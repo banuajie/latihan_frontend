@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Table</title>
+    </head>
+
+    <body>
+        <!-- 
+            Attribute yang biasa disertakan pada tag <table> antara lain :
+            - cellspacing : untuk menentukan jarak antar cell
+            - cellpadding : untuk menentukan jarak isi cell dengan bordernya
+            - width : untuk menentukan lebar tabel
+            - height : untuk menentukan tinggi tabel
+            - bgcolor : untuk memberi warna background pada tabel
+            - align : untuk menentukan perataan pada tabel
+            - border : untuk menentukan tebal border tabel
+
+            Attribute yang biasa disertakan pada tag <tr> dan <td> antara lain :
+            - align : untuk menentukan perataan text pada isi cell
+            - valign : untuk menentukan perataan text secara vertikal
+            - width : untuk menentukan lebar cell
+            - height : untuk menentukan tinggi cell
+            - bgcolor : untuk memberikan background warna pada cell
+            - rowspan : untuk menggabungkan cell baris berikutnya pada kolom yang sama
+            - colspan : untuk menggabungkan cell kolom berikutnya pada baris yang sama
+         -->
+
+        <h3>Contoh Tabel Simpel</h3>
+        <table border="1" cellspacing="0" cellpadding="5" width="30%">
+            <thead>
+                <tr>
+                    <th>Hari</th>
+                    <th>Jam ke 1</th>
+                    <th>Jam ke 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td>Senin</td>
+                    <td>Bahasa Indonesia</td>
+                    <td>Matematika</td>
+                </tr>
+                <tr align="center">
+                    <td>Selasa</td>
+                    <td>Bahasa Inggris</td>
+                    <td>Kejujuran</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <hr>
+
+        <h3>Contoh Tabel menggunakan Rowspan dan Colspan</h3>
+        <table border="1" cellspacing="0" cellpadding="5" width="30%">
+            <thead>
+                <tr>
+                    <th rowspan="2">Hari</th>
+                    <th colspan="2">Jam</th>
+                </tr>
+                <tr>
+                    <th>Pertama</th>
+                    <th>Kedua</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr align="center">
+                    <td>Senin</td>
+                    <td>Bahasa Indonesia</td>
+                    <td>Matematika</td>
+                </tr>
+                <tr align="center">
+                    <td>Selasa</td>
+                    <td>Bahasa Inggris</td>
+                    <td>Kejujuran</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>
