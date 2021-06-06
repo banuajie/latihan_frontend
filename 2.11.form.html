@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form</title>
+    </head>
+
+    <body>
+        <!-- 
+            Attribute yang biasa digunakan pada tag <form> antara lain :
+            - action    : menentukan nama file yang akan memproses data yang dikirim
+            - method    : mengatur metode pengiriman data bisa diisi "get" atau "post"
+                1. get  :
+                    - hanya dapat mengirimkan data dalam ukuran kecil
+                    - data yang dikirim akan ditampilkan pada address barbrowser
+                2. post :
+                    - dapat mengirim data dalam ukuran besar
+                    - data tidak ditampilkan pada address bar
+            
+            Attribute yang biasa digunakan pada tag <label> adalah "for" yang diisi dengan nama "id" dari input yang diberi label
+            
+            Tag <input> digunakan untuk membuat alat input dengan berbagai macam type. Attribute yang biasa dipakai antara lain :
+            - name          : memberi nama sebagai identitas data yang akan dikirim
+            - value         : memberi nilai/isi data yang akan dikirim
+            - size          : mengatur lebar alat input
+            - placeholder   : mengatur tulisan yang tampil ketika tulisannya kosong
+            - disable       : membuat input tidak dapat diubah isinya
+            - readonly      : seperti disable tapi masih bisa diubah nilainya dengan script
+            - id            : memberi identitas data yang akan dikirim
+            - type          : menentukan tipe alat input, khusus untuk type "radio" dan "checkbox" memiliki attribute "checked", berikit adalah contoh value dalam type :
+                1. text     : untuk memasukan teks biasa
+                2. hidden   : untuk menyembunyikan input
+                3. password : untuk memasukan password
+                4. radio    : untuk memberi pilihan nilai yang dapat dipilih dengan cara diklik
+                5. checkbox : untuk memberi pilihan dengan cara dicentang
+                6. submit   : untuk membuat tombol yang akan mengirim data ketika diklik
+                7. reset    : untuk membuat tombol yang akan mengosongkan formulir ketika diklik
+                8. button   : untuk membuat tombol biasa yang memiliki fungsi lain
+            
+            Pada HTML 5 ada penambahan beberapa tipe input. Tipe input yang ditambahkan pada HTML 5 adalah sebagai berikut :
+            - color         : untuk memilih warna
+            - time          : untuk memasukan waktu
+            - number        : untuk memasukan angka
+            - range         : untuk memilih angka pada batas tertentu dengan cara menggeser slide
+            - date          : untuk memasukan tanggal
+            - email         : untuk memasukan email
+            - url           : untuk memasukan url (alamat website)
+         -->
+        
+        <form method="POST" action="proses.php">
+            <label for="nama">Nama : </label>
+            <input type="text" id="nama" placeholder="Nama">
+            <br>
+            <label for="password">Password : </label>
+            <input type="password" id="password" placeholder="Password">
+            <br>
+            <label for="jenisKelamin">Jenis Kelamin : </label>
+            <input type="radio" id="lakiLaki" name="jenisKelamin" checked><label for="lakiLaki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenisKelamin"><label for="perempuan">Perempuan</label>
+            <br>
+            <label for="status">Status : </label>
+            <input type="radio" id="menikah" name="status" checked><label for="menikah">Menikah</label>
+            <input type="radio" id="lajang" name="status"><label for="lajang">Lajang</label>
+            <br>
+            <label for="tanggalLahir">Tanggal Lahir : </label>
+            <input type="date" id="tanggalLahir">
+            <br>
+            <label for="hobi">Hobi : </label>
+            <input type="checkbox" id="sepakBola" name="sepakBola"><label for="sepakBola">Sepak Bola</label>
+            <input type="checkbox" id="game" name="game"><label for="game">Game</label>
+            <input type="checkbox" id="programming" name="programming"><label for="programming">Programming</label>
+            <br>
+            <label for="warnaFavorit">Warna Favorit : </label>
+            <input type="color" id="warnaFavorit">
+            <br>
+            <label for="noHp">Nomor HP : </label>
+            <input type="number" id="noHp" placeholder="Nomor HP">
+            <br>
+            <label for="beratBadan">Berat Badan : </label>
+            <input type="range" id="beratBadan" value="5" step="1" min="1" max="10">
+            <br>
+            <label for="email">Email : </label>
+            <input type="email" id="email" placeholder="Email">
+            <br>
+            <label for="website">Website : </label>
+            <input type="url" id="website" placeholder="Website">
+            <br>
+            <label for="jamKerja">Jam Kerja : </label>
+            <input type="time" id="jamKerja">
+            <br>
+            <input type="submit" value="Simpan">
+            <input type="reset" value="Reset">
+        </form>
+    </body>
+</html>
