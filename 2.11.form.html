@@ -46,46 +46,46 @@
             - url           : untuk memasukan url (alamat website)
          -->
         
-        <form method="POST" action="proses.php">
+         <form method="POST" action="proses.php">
             <label for="nama">Nama : </label>
-            <input type="text" id="nama" placeholder="Nama">
+            <input type="text" id="nama" name="nama" placeholder="Nama User">
             <br>
             <label for="password">Password : </label>
-            <input type="password" id="password" placeholder="Password">
+            <input type="password" id="password" name="password" placeholder="Password User">
             <br>
             <label for="jenisKelamin">Jenis Kelamin : </label>
-            <input type="radio" id="lakiLaki" name="jenisKelamin" checked><label for="lakiLaki">Laki-laki</label>
-            <input type="radio" id="perempuan" name="jenisKelamin"><label for="perempuan">Perempuan</label>
+            <input type="radio" id="lakiLaki" name="jenisKelamin" value="L" checked><label for="lakiLaki">Laki-laki</label>
+            <input type="radio" id="perempuan" name="jenisKelamin" value="P"><label for="perempuan">Perempuan</label>
             <br>
             <label for="status">Status : </label>
-            <input type="radio" id="menikah" name="status" checked><label for="menikah">Menikah</label>
-            <input type="radio" id="lajang" name="status"><label for="lajang">Lajang</label>
+            <input type="radio" id="menikah" name="status" value="M" checked><label for="menikah">Menikah</label>
+            <input type="radio" id="lajang" name="status" value="L"><label for="lajang">Lajang</label>
             <br>
             <label for="tanggalLahir">Tanggal Lahir : </label>
-            <input type="date" id="tanggalLahir">
+            <input type="date" id="tanggalLahir" name="tanggalLahir">
             <br>
             <label for="hobi">Hobi : </label>
-            <input type="checkbox" id="sepakBola" name="sepakBola"><label for="sepakBola">Sepak Bola</label>
-            <input type="checkbox" id="game" name="game"><label for="game">Game</label>
-            <input type="checkbox" id="programming" name="programming"><label for="programming">Programming</label>
+            <input type="checkbox" id="sepakBola" name="hobi" value="Sepakbola"><label for="sepakBola">Sepak Bola</label>
+            <input type="checkbox" id="game" name="hobi" value="Game"><label for="game">Game</label>
+            <input type="checkbox" id="programming" name="hobi" value="Programming"><label for="programming">Programming</label>
             <br>
             <label for="warnaFavorit">Warna Favorit : </label>
-            <input type="color" id="warnaFavorit">
+            <input type="color" id="warnaFavorit" name="warnaFavorit">
             <br>
-            <label for="noHp">Nomor HP : </label>
-            <input type="number" id="noHp" placeholder="Nomor HP">
+            <label for="nomorHP">Nomor HP : </label>
+            <input type="number" id="nomorHP" name="nomorHP" placeholder="Nomor Handphone">
             <br>
             <label for="beratBadan">Berat Badan : </label>
-            <input type="range" id="beratBadan" value="5" step="1" min="1" max="10">
+            <input type="range" id="beratBadan" name="beratBadan" min="1" max="10" value="5" step="1">
             <br>
             <label for="email">Email : </label>
-            <input type="email" id="email" placeholder="Email">
+            <input type="email" id="email" name="email" placeholder="Email Pribadi">
             <br>
             <label for="website">Website : </label>
-            <input type="url" id="website" placeholder="Website">
+            <input type="url" id="website" name="website" placeholder="Website (Optional)">
             <br>
             <label for="jamKerja">Jam Kerja : </label>
-            <input type="time" id="jamKerja">
+            <input type="time" id="jemKerja" name="jamKerja">
             <br>
             <input type="submit" value="Simpan">
             <input type="reset" value="Reset">
