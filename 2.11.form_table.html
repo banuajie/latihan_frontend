@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML Form Table</title>
+    </head>
+
+    <body>
+        <form method="POST" action="proses.php">
+            <table border="1" cellspacing="0" cellpading="5">
+                <thead>
+                    <tr>
+                        <th colspan="3">DAFTAR KARYAWAN</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            <label for="nama">Nama</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="text" id="nama" name="nama" placeholder="Nama Karyawan" size="33">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="password">Password</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="password" id="password" name="password" placeholder="Password Karyawan" size="33">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="jenisKelamin">Jenis Kelamin</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="lakiLaki" name="jenisKelamin" value="L" checked><label for="lakiLaki">Laki-laki</label>
+                            <input type="radio" id="perempuan" name="jenisKelamin" value="P"><label for="perempuan">Perempuan</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="status">Status</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="radio" id="menikah" name="status" value="Menikah" checked><label for="menikah">Menikah</label>
+                            <input type="radio" id="lajang" name="status" value="Lajang"><label for="lajang">Lajang</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="tanggalLahir">Tanggal Lahir</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="date" id="tanggalLahir" name="tanggalLahir">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="hobi">Hobi</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="checkbox" id="sepakBola" name="hobi" value="Sepakbola"><label for="sepakBola">Sepak Bola</label>
+                            <input type="checkbox" id="game" name="hobi" value="Game"><label for="game">Game</label>
+                            <input type="checkbox" id="programming" name="hobi" value="Programming"><label for="programming">Programming</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="warnaFavorit">Warna Favorit</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="color" id="warnaFavorit" name="warnaFavorit">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="nomorHP">Nomor HP</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="number" id="nomorHP" name="nomorHP" placeholder="Nomor Handphone">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="beratBadan">Berat Badan</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="range" id="beratBadan" name="beratBadan" min="0" max="10" step="1" value="5">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="email">Email</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="email" id="email" name="email" placeholder="Email Pribadi" size="33">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="website">Website</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="url" id="website" name="website" placeholder="Website (Optional)" size="33">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="jamKerja">Jam Kerja</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <input type="time" id="jamKerja" name="jamKerja">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="jabatan">Jabatan</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <select id="jabatan" name="jabatan">
+                                <option value="Direktur">Direktur</option>
+                                <option value="Manager">Manager</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Sekretaris">Sekretaris</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="alamat">Alamat</label>
+                        </td>
+                        <td>
+                            <label>:</label>
+                        </td>
+                        <td>
+                            <textarea id="alamat" name="alamat" cols="35" rows="10" placeholder="Alamat Lengkap"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" align="center">
+                            <input type="submit" value="Simpan">
+                            <input type="reset" value="Reset">
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
