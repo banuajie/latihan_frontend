@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Pseudo Class</title>
+        <style type="text/css">
+            .biru {
+                color: blue;
+            }
+            .biru:hover {
+                color: red;
+                text-decoration: none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!-- 
+            Pseudo Class digunakan untuk menunjukan keadaan khusus pada selector yang dipilih, misalnya element yang ditunjuk mouse, element yang fokus, element aktif
+            dan sebagainya.
+
+            Beberapa contoh pseudo class sebagai berikut :
+            1. :active
+                contoh : a:active (memilih link yang aktif)
+            2. :checked
+                contoh : input:checked (memilih tag <input> yang dicentang, biasanya untuk type radio dan checkbox)
+            3. :disable
+                contoh : input:disable (memilih tag <input> yang dininaktifkan)
+            4. :enable
+                contoh : input:enable (memilih tag <input> yang dinonaktifkan (enable))
+            5. :empty
+                contoh : p:empty (memilih tag <p> yang tidak memiliki element anak)
+            6. :first-child
+                contoh : p:first-child (memilih tag <p> pertama dala satu container)
+            7. :focus
+                contoh : input:focus (memilih tag <input> yang sedang fokus)
+            8. :hover
+                contoh : a:hover (memilih link yang sedang ditunjuk mouse)
+            9. :last-child
+                contoh : p:last-child (memilih tag <p> terakhir dari suatu container)
+            10.:link
+                contoh : a:link (memilih link yang belum dikunjungi)
+            11.:not(selector)
+                contoh : not(p) (memilih selain tag <p>)
+            12.:nth-child(n)
+                contoh : p:nth-child(2) (memilih tag <p> pada urutan ke 2)
+            13.:nth-last-child(n)
+                contoh : p:nth-last-child(2) (memilih tag <p> pada urutan ke 2 dari akhir)
+            14.:read-only
+                contoh : input:read-only (memilih tag input yang memiliki status read only)
+            15.:visited
+                contoh : a:visited (memilih link yang telah dikunjungi)
+            16.:required
+                contoh : input:required (Memilih tag <input> yang harus diisi)
+            17.:valid
+                contoh : input:valid (memilih tag <input> yang memiliki nilai valid)
+            18.:target
+                contoh : #tab:target (memilih element dengan id tab yang aktif (menjadi target klik dari suatu link))
+         -->
+
+         <h2>Judul Artikel</h2>
+         <p><a class="biru">Isi tag a di dalam tag p</a></p>
+         <a class="biru">Isi tag a</a>
+    </body>
+</html>
